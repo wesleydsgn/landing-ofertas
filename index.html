@@ -1,97 +1,175 @@
-<div id="oferta-vip-final">
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo VIP de Promoções 🔥</title>
 
-<style>
-body.page {
-    background: radial-gradient(circle at top, #2a003d 0%, #0b0014 100%) !important;
-}
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-#oferta-vip-final {
-    --cor-container: #1a0028;
-    --cor-gradiente-1: #a855f7;
-    --cor-principal: #c084fc;
-    color: #ffffff;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* CONTAINER */
-#oferta-vip-final .container {
-    background: var(--cor-container);
-    box-shadow: 0 0 45px rgba(168,85,247,.6);
-}
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #6a00ff, #1a001f);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      padding: 20px;
+    }
 
-/* LOGO */
-#oferta-vip-final .profile-pic {
-    border: 3px solid var(--cor-principal);
-}
+    .container {
+      max-width: 420px;
+      width: 100%;
+      background: rgba(0,0,0,0.45);
+      border-radius: 22px;
+      padding: 30px 24px;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0,0,0,.6);
+      border: 1px solid rgba(255,255,255,.1);
+    }
 
-/* TÍTULO */
-#oferta-vip-final h1 {
-    color: #f5e9ff;
-}
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+      border: 3px solid #b56bff;
+    }
 
-/* TEXTO */
-#oferta-vip-final p {
-    color: #e9d5ff;
-}
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.7rem;
+      font-weight: 900;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
 
-/* TIMER */
-#oferta-vip-final .timer-box {
-    background: rgba(168,85,247,.18);
-    border: 1px solid var(--cor-gradiente-1);
-}
-#oferta-vip-final #countdown {
-    color: var(--cor-principal);
-    text-shadow: 0 0 14px rgba(192,132,252,.9);
-}
+    p {
+      font-size: 0.95rem;
+      color: #e0d6ff;
+      margin-bottom: 22px;
+    }
 
-/* BARRA */
-#oferta-vip-final .progress-bar {
-    background: rgba(255,255,255,0.12);
-}
-#oferta-vip-final .progress-bar-fill {
-    background: linear-gradient(90deg, var(--cor-gradiente-1), var(--cor-principal));
-}
-#oferta-vip-final .progress-bar-text {
-    color: #0b0014;
-}
+    .highlight {
+      color: #ffd6ff;
+      font-weight: 700;
+    }
 
-/* BOTÃO */
-#oferta-vip-final .button {
-    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-principal));
-    color: #0b0014;
-    box-shadow: 0 0 30px rgba(192,132,252,.85);
-}
-</style>
+    .urgency {
+      background: rgba(181,107,255,.15);
+      border: 1px solid rgba(181,107,255,.4);
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 0.85rem;
+      margin-bottom: 22px;
+    }
 
-<div class="container">
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 18px;
+      border-radius: 16px;
+      background: linear-gradient(45deg, #a855f7, #6a00ff);
+      color: #000;
+      font-weight: 900;
+      font-size: 1.05rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      box-shadow: 0 0 30px rgba(168,85,247,.8);
+      animation: pulse 1.6s infinite;
+    }
 
-    <img src="logo-ct.png" class="profile-pic">
+    .button img {
+      width: 26px;
+      height: 26px;
+    }
 
-    <h1>As melhores promoções, de mamãe para mamãe!</h1>
-    <p>Entre no grupo VIP e receba ofertas diárias da Shopee, Amazon e Mercado Livre antes de todo mundo!</p>
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.06); }
+      100% { transform: scale(1); }
+    }
 
-    <div class="timer-box">
-        <p>O ACESSO VIP GRATUITO ENCERRA EM:</p>
-        <div id="countdown">03:00</div>
+    .telegram-button {
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px;
+      border-radius: 16px;
+      background: linear-gradient(45deg, #229ED9, #0088cc);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(0,136,204,.6);
+    }
+
+    .telegram-button img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .footer {
+      margin-top: 22px;
+      font-size: 0.75rem;
+      opacity: .7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Coloque sua imagem no repositório como logo.png -->
+    <img src="./logo.png" alt="Logo" class="logo">
+
+    <h1>
+      Receba <span class="highlight">as melhores promoções</span> antes de todo mundo
+    </h1>
+
+    <p>
+      Grupo VIP com ofertas <strong>reais</strong> da Shopee, Amazon e Mercado Livre.<br>
+      Sem spam. Só desconto bom.
+    </p>
+
+    <div class="urgency">
+      ⚠️ Acesso gratuito por tempo limitado.<br>
+      O grupo fecha ao atingir o limite.
     </div>
 
-    <div class="vagas-container">
-        <div class="vagas-texto">
-            CORRA! RESTAM APENAS <strong id="vagas-restantes">190</strong> VAGAS!
-        </div>
-
-        <div class="progress-bar">
-            <div class="progress-bar-fill" id="progress-fill">
-                <span class="progress-bar-text" id="progress-text">0%</span>
-            </div>
-        </div>
-    </div>
-
-    <a href="https://chat.whatsapp.com/BGO8fEmARJeFy1e54MuIw9"
-       class="button" style="margin-top:10px !important;">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="wpp-icon">
-        Entrar no grupo
+    <!-- CTA PRINCIPAL -->
+    <a class="button" href="https://chat.whatsapp.com/BGO8fEmARJeFy1e54MuIw9" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+      Entrar no grupo VIP
     </a>
 
-</div>
+    <!-- CTA SECUNDÁRIO -->
+    <a class="telegram-button" href="https://t.me/crowmantech" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+      Entrar no canal do Telegram
+    </a>
 
-</div>
+    <div class="footer">
+      © 2025 • Acesso gratuito • Promoções selecionadas
+    </div>
+
+  </div>
+
+</body>
+</html>
