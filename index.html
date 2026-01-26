@@ -248,7 +248,7 @@
   }, 1000);
 
   /* OFERTAS TELEGRAM */
-  fetch("https://crowmantech.app.n8n.cloud/webhook/ofertas-telegram")
+  fetch("https://crowmantech.app.n8n.cloud/webhook/ofertas")
     .then(res => res.json())
     .then(data => {
       const list = document.getElementById("offers-list");
@@ -272,4 +272,5 @@
 
 </body>
 </html>
+
 
